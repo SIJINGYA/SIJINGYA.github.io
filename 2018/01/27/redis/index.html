@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>Redis学习笔记 | Jungle</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Redis学习笔记Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。是一个高性能的key-value储存系统，其中的值（value）可以为字符串(String), 哈希(Map), 列表(list), 集合(sets) 和 有序集合(sorted sets)等类型。  一、Redis的安装 下载地址：https://github.com/MSOp">
+  <meta name="description" content="Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。是一个高性能的key-value储存系统，其中的值（value）可以为字符串(String), 哈希(Map), 列表(list), 集合(sets) 和 有序集合(sorted sets)等类型。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Redis学习笔记">
 <meta property="og:url" content="http://yoursite.com/2018/01/27/redis/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Redis学习笔记Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。是一个高性能的key-value储存系统，其中的值（value）可以为字符串(String), 哈希(Map), 列表(list), 集合(sets) 和 有序集合(sorted sets)等类型。  一、Redis的安装 下载地址：https://github.com/MSOp">
-<meta property="og:updated_time" content="2018-01-22T15:52:00.734Z">
+<meta property="og:site_name" content="Jungle">
+<meta property="og:description" content="Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。是一个高性能的key-value储存系统，其中的值（value）可以为字符串(String), 哈希(Map), 列表(list), 集合(sets) 和 有序集合(sorted sets)等类型。">
+<meta property="og:updated_time" content="2018-01-27T13:51:53.727Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="Redis学习笔记Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。是一个高性能的key-value储存系统，其中的值（value）可以为字符串(String), 哈希(Map), 列表(list), 集合(sets) 和 有序集合(sorted sets)等类型。  一、Redis的安装 下载地址：https://github.com/MSOp">
+<meta name="twitter:title" content="Redis学习笔记">
+<meta name="twitter:description" content="Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。是一个高性能的key-value储存系统，其中的值（value）可以为字符串(String), 哈希(Map), 列表(list), 集合(sets) 和 有序集合(sorted sets)等类型。">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Jungle" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -49,7 +49,7 @@
 			<img src="http://ww3.sinaimg.cn/large/0060lm7Tly1fnvh3pvqk4j30da0da74m.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">米斯特汀</a></h1>
 		</hgroup>
 		
 
@@ -103,7 +103,7 @@
 				<img src="http://ww3.sinaimg.cn/large/0060lm7Tly1fnvh3pvqk4j30da0da74m.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">米斯特汀</h1>
 			</hgroup>
 			
 			
@@ -148,10 +148,27 @@
             <article id="post-redis" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Redis学习笔记
+    </h1>
+  
+
+        
+        <a href="/2018/01/27/redis/" class="archive-article-date">
+  	<time datetime="2018-01-27T12:24:53.291Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-27</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Redis学习笔记"><a href="#Redis学习笔记" class="headerlink" title="Redis学习笔记"></a>Redis学习笔记</h2><pre><code>Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。是一个高性能的key-value储存系统，其中的值（value）可以为字符串(String), 哈希(Map), 列表(list), 集合(sets) 和 有序集合(sorted sets)等类型。
+        <hr>
+<pre><code>Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。是一个高性能的key-value储存系统，其中的值（value）可以为字符串(String), 哈希(Map), 列表(list), 集合(sets) 和 有序集合(sorted sets)等类型。
 </code></pre><hr>
+<a id="more"></a>
 <h4 id="一、Redis的安装"><a href="#一、Redis的安装" class="headerlink" title="一、Redis的安装"></a>一、Redis的安装</h4><hr>
 <p>下载地址：<a href="http://" target="_blank" rel="noopener">https://github.com/MSOpenTech/redis/releases</a></p>
 <p><strong>安装：</strong></p>
@@ -244,15 +261,6 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/01/27/asd/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          asd
-        
-      </div>
-    </a>
-  
   
     <a href="/2018/01/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Hello World</div>
@@ -298,7 +306,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 John Doe
+    		&copy; 2018 米斯特汀
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -436,26 +444,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               <a href="https://hackcraker.github.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>源泉</a>
             </li>
           
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
         </ul>
   		
     	</section>
@@ -464,7 +452,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">不惭愧</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">软件工程本科在读生</div>
   	  	
     	</section>
     
